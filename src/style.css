@@ -1,1 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.card {
+  margin: auto;
+  margin-top: 30px;
+  width: 300px;
+  height: 430px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 110px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px;
+}
+
+.spades::before {
+  content: "\2660";
+  width: 100%;
+}
+.spades::after {
+  content: "\2660";
+  width: 100%;
+  transform: rotate(180deg);
+}
+.clubs::before {
+  content: "\2663";
+  width: 100%;
+}
+.clubs::after {
+  content: "\2663";
+  width: 100%;
+  transform: rotate(180deg);
+}
+.heart::before {
+  content: "\2665";
+  width: 100%;
+  color: red;
+}
+.heart::after {
+  content: "\2665";
+  width: 100%;
+  color: red;
+  transform: rotate(180deg);
+}
+.diamond::before {
+  content: "\2666";
+  width: 100%;
+  color: red;
+}
+.diamond::after {
+  content: "\2666";
+  width: 100%;
+  color: red;
+  transform: rotate(180deg);
+}
